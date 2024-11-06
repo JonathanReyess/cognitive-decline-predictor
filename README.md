@@ -64,9 +64,7 @@ The overall accuracy of the model was **61%**.
 
 ### Hyperparameter Tuning
 
-To improve our model's performance, we tried hyperparameter tuning using Randomized Search. The goal is to find the best parameters to boost the model's accuracy.
-
-However, the dataset is too small, which makes it prone to overfitting.
+To improve our model's performance, we tried hyperparameter tuning using Randomized Search. The goal being to find the best parameters to boost the model's accuracy. However, our dataset is too small, making it prone to overfitting.
 
 To get a better idea of the model's performance, we used cross-fold validation by testing the model on different parts of the data. 
 
