@@ -49,8 +49,6 @@ The following table summarizes the results:
 | F (Frontotemporal Dementia) | 0.75      | 0.38   | 0.50     | 8      |
 | C (Healthy Control) | 0.40      | 1.00   | 0.57     | 2      |
 
-Overall accuracy of the model was **61%**. 
-
 ### Summary of Performance Metrics
 - **Macro Average**:
   - Precision: 0.61
@@ -62,13 +60,19 @@ Overall accuracy of the model was **61%**.
   - Recall: 0.61
   - F1-Score: 0.60
 
-## Next Steps
+The overall accuracy of the model was **61%**. 
 
 ### Hyperparameter Tuning
 
-To enhance the performance of our model, the next step involves conducting a systematic search for optimal hyperparameters. This can be achieved through techniques such as Grid Search or Randomized Search. 
+To improve our model's performance, we tried hyperparameter tuning using Randomized Search. The goal is to find the best parameters to boost the model's accuracy.
 
-By identifying which parameters have the most significant impact on model performance, we aim to refine our model further and improve its predictive accuracy.
+However, the dataset is too small, which makes it prone to overfitting.
+
+To get a better idea of the model's performance, we used cross-fold validation by testing the model on different parts of the data. 
+
+With cross-fold validation, the average accuracy increased from 61% to **65%**, which was a small improvement. 
+
+Additionally, we achieved an ROC AUC score of **0.72**, showing that the model has a decent ability to distinguish between classes.
 
 ## Related Research
 
